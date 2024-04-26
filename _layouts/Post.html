@@ -100,6 +100,15 @@
                     {%- include Feed.html -%}
             {%- endif -%}
 
+
+            <!-- IMAGE TRY https://github.com/BillRaymond/jekyll-featured-images/blob/master/_layouts/post.html -->
+            {%- if page.image -%}
+            <img src="{{- page.image | relative_url -}}" alt="" class="featured-image-post">
+          {%- else -%}
+            {%- assign postImage = "/assets/images/image-default.jpg" -%}
+            <img src="{{- postImage | relative_url -}}" alt="" class="featured-image-post">
+          {%- endif -%}
+
             <!--- Notes Layout-->
             {%- if page.content-type == "notes" -%}
             <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
