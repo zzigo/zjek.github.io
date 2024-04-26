@@ -70,7 +70,7 @@ plugins:
 collections:
     notes:
       output: true
-      permalink: /note/:title
+      permalink: /:title
 
 markdown: kramdown
 
@@ -90,7 +90,7 @@ defaults:
       type: posts
     values:
       layout: Post
-      permalink: /post/:title
+      permalink: /:title
       content-type: post
   - scope:
       path: ""
