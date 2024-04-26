@@ -2,6 +2,7 @@
 title : Welcome to the garden
 feed: show
 date : 15-04-2021
+image: https://i.imgur.com/J5nZQZB.png
 ---
 
 ![](https://i.imgur.com/J5nZQZB.png)
