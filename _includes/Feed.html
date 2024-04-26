@@ -47,12 +47,7 @@
     {% assign note_items = site.notes | sort: "date" | reverse %}
     {% for note_items in note_items %}
         {%- if note_items.feed == "show" -%}
-        {%- if post.image -%}
-        <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image">
-      {%- else -%}
-        {%- assign postImage = "/assets/images/image-default.jpg" -%}
-        <img src="{{- postImage | relative_url -}}" alt="" class="blog-roll-image">
-      {%- endif -%}
+        
                 <div class="notelist-feed">
                     <a href="{{ site.baseurl }}{{note_items.url}}">
                         <h6>{{ note_items.title }}</h6>
